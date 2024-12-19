@@ -54,3 +54,4 @@ dkms.conf
 # Compiled executables
 *hello
 *mario
+*credit

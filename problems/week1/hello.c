@@ -4,7 +4,7 @@
 /*
 The Hello program prompts the user for their name, and then
 returns a greeting to them
-Full Question: https://cs50.harvard.edu/x/2022/psets/1/hello/
+(https://cs50.harvard.edu/x/2022/psets/1/hello/)
 */
 
 int main(void)

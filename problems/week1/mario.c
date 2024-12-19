@@ -4,7 +4,7 @@
 /* 
 Recreate the mario block pyramids using text. First prompt the user
 for the size of the pyramid and then print it out to the console.
-Full Question: https://cs50.harvard.edu/x/2022/psets/1/mario/more/
+(https://cs50.harvard.edu/x/2022/psets/1/mario/more/)
 */
 
 int main(void)
