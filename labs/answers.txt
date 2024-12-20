@@ -1,0 +1,25 @@
+Question
+--------
+Using the provided compiled sorting algoirthms (sort1, sort2 and sort3),
+ determine which sorting algorithm they use and explain how you know.
+(https://cs50.harvard.edu/x/2022/labs/3/)
+
+Answers
+-------
+
+sort1 uses: Bubble
+
+How do you know?: Is is the fastest to sort a sorted list. Bubble sort exits
+after 1 loop if no elements were swapped.
+
+sort2 uses: Merge
+
+How do you know?: It is the fastest to sort a random list. Merge sort is
+significantly faster than slecetion and merge for unsorted lists becuase it
+uses a diver-and-conquer technique.
+
+sort3 uses: Selection
+
+How do you know?: It is slow for both random and unsorted lists. This is because
+selection still goes through each loop and selects the smallest element, even
+if it is already in the correct place.
