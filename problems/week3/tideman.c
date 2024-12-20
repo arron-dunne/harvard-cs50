@@ -3,11 +3,11 @@
 #include "../../lib/cs50.h"
 
 /*
-Implement a tideman election (each voter ranks their top 3 candidates
+Implement a tideman election (each voter ranks all of the candidates
 and the winner is the candidate who would of won any head-to-head matchup
 against an oponent, the "Condorcet winner"). Take in the candidate names
 as arguments and then prompt the user for the number of voters. For each 
-voter, prompt the user for their top 3 ranked candidates. Finally, show the
+voter, prompt the user for their ranked candidates. Finally, show the
 winner according to the tideman algorithm.
 
 https://cs50.harvard.edu/x/2022/psets/3/tideman/
