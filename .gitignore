@@ -52,12 +52,17 @@ Mkfile.old
 dkms.conf
 
 # Compiled executables
-*hello
-*mario
-*credit
-*scrabble
-*readability
-*substitution
-*plurality
-*tideman
-*volume
+hello
+mario
+credit
+scrabble
+readability
+substitution
+plurality
+tideman
+volume
+filter
+!filter/
+
+# other
+.DS_Store
