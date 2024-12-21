@@ -63,6 +63,7 @@ tideman
 volume
 filter
 !filter/
+recover
 
 # other
 .DS_Store
