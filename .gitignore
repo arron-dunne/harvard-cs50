@@ -70,3 +70,4 @@ speller
 
 # other
 .DS_Store
+.venv
