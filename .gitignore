@@ -64,6 +64,9 @@ volume
 filter
 !filter/
 recover
+inheritance
+speller
+!speller/
 
 # other
 .DS_Store
