@@ -1,0 +1,2 @@
+-- Output a table with a single column for the name of each song with dancability, energy and valence greater than 0.75
+SELECT name FROM songs WHERE danceability > 0.75 AND energy > 0.75 AND valence > 0.75;

@@ -11,6 +11,9 @@ The first half of the course introduces the C programming language and uses it f
 ## Python
 In the second half of the course, Python is introduced for the main programming language. Python is a more abstract language compared to C with memory management, compilation and data types handled by the Python interpreator, so the programmer doesn't need to consider these. This simplification (for the programmer, not the interpreator, which in many ways has to be more complex than the C compiler) means that more advanced programs can be written with cleaner, more concise code. 
 
+## SQL
+In week 7, SQL is introduced for accessing and storing data in a database. A SQLite database is created and SQL statements are written in files. These SQL files can be executed on the terminal (inside the python virtual environment) using `cat <filename.sql> | sqlite <database.db>`.
+
 ## CS50 Library
 The programs in this course make use of the [CS50 C Library](https://github.com/cs50/libcs50). For simplicity, the library is included in `lib/` and linked to each C program during compilation.
 
