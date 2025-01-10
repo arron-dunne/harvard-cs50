@@ -1,6 +1,6 @@
 # Harvard University's CS50: Introduction to Computer Science
 
-Problems and labs from the Harvard University CS50 course.
+Problems and labs from Harvard University's [CS50 course](https://cs50.harvard.edu/x/2022/).
 
 ## C
 The first half of the course introduces the C programming language and uses it for exercises. C is a low-level language and using it helps to understand the fundamentals of progamming and essential concepts. 
@@ -13,6 +13,9 @@ In the second half of the course, Python is introduced for the main programming 
 
 ## SQL
 In week 7, SQL is introduced for accessing and storing data in a database. A SQLite database is created and SQL statements are written in files. These SQL files can be executed on the terminal (inside the python virtual environment) using `cat <filename.sql> | sqlite <database.db>`.
+
+## Web / HTML
+In week 8, simple websites are made using HTML, CSS and JavaScript. These websites consist of a front-end only, not a backend. To view these pages it is recommended to open the projects in VS Code and use the [Preview on Web Server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server) extension to view them. Alternatively create a web server backend and serve the `index.html` page, which contains links to the CSS and JavaScript files.
 
 ## CS50 Library
 The programs in this course make use of the [CS50 C Library](https://github.com/cs50/libcs50). For simplicity, the library is included in `lib/` and linked to each C program during compilation.

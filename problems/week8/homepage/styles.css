@@ -1,0 +1,31 @@
+h1
+{
+    font-family: fantasy;
+}
+
+h2
+{
+    color: red;
+}
+
+h3
+{
+    color: red;
+}
+
+.navbar
+{
+    background-color: #ff3333;
+    padding-left: 20px;
+}
+
+#contents
+{
+    padding: 30px;
+}
+
+#cat-pic
+{
+    width: 250px;
+    height: 250px;
+}
