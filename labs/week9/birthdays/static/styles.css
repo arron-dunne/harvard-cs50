@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding-bottom: 6rem;
+    font-family: 'Montserrat', sans-serif;
+    --blue:  rgb(179, 208, 255);
+}
+
+h1 {   
+    font-size: 48px;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-spacing: 0;
+    border: 1px solid slategrey;
+}
+
+th {
+    font-size: 18px;
+}
+
+th, td {
+    border: 0.5px solid slategrey;
+    padding: 0.75rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.5)
+}
+
+button {
+    background-color: rgb(179, 208, 255);
+    border-radius: 0.2rem;
+    border: 0;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.title {
+    background-color: #477bff;
+    color: #fff;
+    padding: 1rem;
+    height: 100px;
+    text-align: center;
+}
+
+.container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-birthday-form {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    gap: 1rem;
+}
+
+#add-birthday-form > * {
+    width: 25%;
+    line-height: 1.8;
+}

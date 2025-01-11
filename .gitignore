@@ -68,6 +68,7 @@ inheritance
 speller
 !speller/
 
-# other
+# Other
 .DS_Store
 .venv
+__pycache__/

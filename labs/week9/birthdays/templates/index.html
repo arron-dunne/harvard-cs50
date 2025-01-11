@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="title">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <h2>All Birthdays</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in birthdays %}
+                    <tr>
+                        <td>{{ entry['name'] }}</td>
+                        <td>{{ entry['day'] }}  {{ entry['month'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <h2>Add a Birthday</h2>
+            <form action="/" method="post" id="add-birthday-form">
+                <input autocomplete="off" name="name" placeholder="Name" type="text" required>
+                <input name="day" placeholder="Day" type="number" max="31" min="0" step="1" required>
+                <select name="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </body>
+</html>
