@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <table class="table table-borderless mx-auto w-auto">
+        <tbody>
+            <tr>
+                <td>Cash</td>
+                <td>{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <td>Portfolio Value</td>
+                <td>{{ value | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-bordered mx-auto w-auto">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Value</th>
+            <th>Make Transaction</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for company in data %}
+            <tr>
+                <td>{{ company['name'] }}</td>
+                <td>{{ company['symbol'] }}</td>
+                <td>{{ company['shares'] }}</td>
+                <td>{{ company['price'] | usd }}</td>
+                <td>{{ company['value'] | usd }}</td>
+                <td>
+                    <form class="form-inline" method="post">
+                        <div class="form">
+                            <input autocomplete="off" autofocus class="w-50" id="shares" name="shares" placeholder="Shares" type="number">
+                            <input type="hidden" name="symbol" value="{{ company["symbol"] }} ">
+                            <button class="btn btn-primary" type="submit" formaction="/buy">Buy</button>
+                            <button class="btn btn-primary" type="submit" formaction="/sell">Sell</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+            <tr></tr>
+        </tbody>
+    </table>
+
+{% endblock %}

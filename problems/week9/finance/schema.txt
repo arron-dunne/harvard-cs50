@@ -1,0 +1,13 @@
+users
+    id INTEGER
+    username TEXT
+    hash TEXT
+    cash NUMERIC
+
+transactions
+    id INTEGER UNIQUE AUTOINCREMENGINT PRIMARY KEY
+    user_id INTEGER
+    symbol TEXT
+    price NUMERIC
+    shares NUMERIC
+    datetime TEXT

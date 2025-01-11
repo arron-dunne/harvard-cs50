@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <table class="table table-bordered mx-auto w-auto">
+        <tbody>
+        <tr>
+            <td>Name</td>
+            <td><b>{{ name }}</b></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><b>{{ price | usd }}</b></td>
+        </tr>
+        <tr>
+            <td>Symbol</td>
+            <td><b>{{ symbol }}</b></td>
+        </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

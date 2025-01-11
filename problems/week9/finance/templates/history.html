@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-bordered mx-auto w-auto">
+        <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Buy/Sell</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>Date & Time</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for entry in data %}
+            <tr>
+                <td>{{ entry["symbol"] }}</td>
+                <td>{{ entry["buysell"] }}</td>
+                <td>{{ entry["shares"] }}</td>
+                <td>{{ entry["price"] | usd }}</td>
+                <td>{{ entry["datetime"] }}</td>
+            </tr>
+            {% endfor %}
+            <tr></tr>
+        </tbody>
+    </table>
+
+{% endblock %}
