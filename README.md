@@ -44,3 +44,10 @@ In week 8, simple websites are made using HTML, CSS, and JavaScript. These websi
 ### Running Web Pages
 - To view these pages, it is recommended to open the projects in VS Code and use the [Preview on Web Server](https://marketplace.visualstudio.com/items?itemName=yuichinukiyama.vscode-preview-server) extension to view them. 
 - Alternatively, create a web server backend and serve the `index.html` page, which contains links to the CSS and JavaScript files.
+
+## Final Project
+The final project was to develop a software program, showing all the skills learnt throughout this course.
+I decided to make a web application for saving user recipes using Flask, showcasing my skills in web development. The app is called Foodie and I saved it in a seperate GitHub
+repository.
+
+[Foodie Repository](https://github.com/arron-dunne/foodie)
