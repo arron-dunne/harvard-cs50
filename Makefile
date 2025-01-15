@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Werror -std=c11
 
-all: hello mario credit scrabble readability substitution plurality tideman volume filter recover inheritance dictionary
+all: hello mario credit scrabble readability substitution plurality tideman volume filter recover inheritance speller
 
 hello: problems/week1/hello.c lib/cs50.c
 	@$(CC) $(CFLAGS) -o problems/week1/hello problems/week1/hello.c lib/cs50.c
@@ -64,5 +64,5 @@ clean:
 	@rm -f labs/week3/volume
 	@rm -f problems/week4/filter/filter problems/week4/recover
 	@rm -f labs/week5/inheritance
-	@rm -f problems/week5/dictionary
+	@rm -f problems/week5/speller/speller
 
